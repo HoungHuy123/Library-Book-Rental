@@ -2,26 +2,31 @@
 
 Book::Book(int id, string bookName, string auth, string cat) {
     // complete constructor
+    bookID = id;
+    title = bookName;
+    author = auth;
+    category = cat; 
 }
 
 string Book::getTitle() {
-    return ""; // complete
+    return title; // complete
 }
 
 string Book::getAuthor() {
-    return ""; // complete
+    return author; // complete
 }
 
 string Book::getCategory() {
-    return ""; // complete
+    return category; // complete
 }
 
 int Book::getId() {
-    return 0; // complete
+    return bookID; // complete
 }
 void Book::setPersonPtr(Person * ptr) {
+    personPtr = ptr;
 } // complete
 
 Person * Book::getPersonPtr() {
-    return nullptr; // complete
+    return personPtr; // complete
 }
