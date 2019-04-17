@@ -78,9 +78,21 @@ void readRentals(vector<Book *> & myBooks, vector<Person *> myCardholders) {
     }
     return;
 }
-/*
+
 void openCard(vector<Person *> & myCardholders, int nextID) {
-    
+    string firstname = "";
+    string lastname = "";
+    string fullname = "";
+
+    cout << "Please enter the first name: ";
+    cin >> firstname;
+    cout << "Please enter the last name: ";
+    cin >> lastname;
+    fullname = firstname + " " + lastname;
+    //check if fullname is equal to any existing name if no, create new one
+    for( int i = 0; i < myCardholders.size(); i++){
+        if(fullname == 
+    }
     return;
 }
 
@@ -88,7 +100,7 @@ Book * searchBook(vector<Book *> myBooks, int id) {
 
     return nullptr;
 }
-*/
+
 
 int main()
 {
