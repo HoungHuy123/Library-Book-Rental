@@ -189,10 +189,7 @@ void checkout(vector<Person *> & myCardHolders, vector<Book *> & myBooks){
         cout << "Card ID not found" << endl;
         return ;
     }
-    cout << "\nCardholder: ";
-    //cin >> cardname;
-    getline(cin, cardname);
-    //cin.ignore();
+    cout << "\nCardholder: " << cptr->fullName();
     
     cout << "\nPlease Enter Book ID: ";
     cin >> bookid;
